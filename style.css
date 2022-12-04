@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background: #051937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-height: 100vh;
+}
+
+.wrapper {
+    background: #090f1545;
+    max-width: 25rem;
+    height: 12rem;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.wrapper.active {
+    height: 26rem;
+    box-shadow: 0px 0px 10px 10px rgba(83, 36, 255, 1);
+}
+
+h1 {
+    color: #fff;
+    background: linear-gradient(250deg, #9A1DFD 0%, rgba(37, 115, 252, 1) 100%);
+    width: 30vh;
+    margin: 0 auto;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    font-size: 2rem;
+}
+
+p {
+    color: #fff;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.wrapper .form {
+    margin: 10px 0 10px;
+}
+
+.form :where(input, button) {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+}
+
+input {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #d9d9d9;
+}
+
+input::-webkit-input-placeholder {
+    padding-left: 10px;
+}
+
+button {
+    background: linear-gradient(250deg, #9A1DFD 0%, rgba(37, 115, 252, 0.7) 100%);
+    height: 2rem;
+    cursor: pointer;
+    color: #FFF;
+    font-weight: bold;
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#imgQrCode {
+    opacity: 0;
+    pointer-events: none;
+    width: 200px;
+}
+
+.wrapper.active #imgQrCode {
+    opacity: 1;
+    pointer-events: auto;
+    transition: 1s 0.3s ease;
+    filter: drop-shadow(0px 0px 10px #2A6EFC);
+}
